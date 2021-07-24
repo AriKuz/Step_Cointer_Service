@@ -15,7 +15,7 @@
 
 
         <activity
-            android:name=".WelcomeActivity"
+            android:name="com.example.steps_counter_service.WelcomeActivity"
             android:label="@string/title_activity_animation_start">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +27,7 @@
                Set to true if your app is Standalone, that is, it does not require the handheld
                app to run.
         -->
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.steps_counter_service.MainActivity">
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
 
@@ -35,7 +35,7 @@
 <!--            </intent-filter>-->
         </activity>
 
-        <activity android:name=".StepsCounter">
+        <activity android:name="com.example.steps_counter_service.StepsCounter">
             <!--            <intent-filter>-->
             <!--                <action android:name="android.intent.action.MAIN" />-->
 

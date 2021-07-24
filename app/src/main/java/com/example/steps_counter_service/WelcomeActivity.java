@@ -1,4 +1,4 @@
-package com.example.temp_sensor_service;
+package com.example.steps_counter_service;
 
 import android.os.Bundle;
 
@@ -11,6 +11,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.temp_sensor_service.R;
 
 public class WelcomeActivity extends AppCompatActivity {
 

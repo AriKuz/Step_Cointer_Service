@@ -1,4 +1,4 @@
-package com.example.temp_sensor_service
+package com.example.steps_counter_service
 
 import android.content.Context
 import android.hardware.Sensor
@@ -10,6 +10,7 @@ import android.util.Log
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.temp_sensor_service.R
 
 class StepsCounter : AppCompatActivity(), SensorEventListener {
     // Added SensorEventListener the MainActivity class
