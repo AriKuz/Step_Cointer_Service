@@ -13,8 +13,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private Button startServices,stopServices;
-    float tempParemeter;
+    private Button mapService;
 
     SensorsDataReciever receiver;
 
@@ -26,14 +25,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         receiver = new SensorsDataReciever();
         registerReceiver(receiver, new IntentFilter("GET_SIGNAL_STRENGTH"));  //<----Register
 
-
-        startServices=findViewById(R.id.startServices);
-        stopServices=findViewById(R.id.stopServices);
-        startServices.setOnClickListener( this );
-        stopServices.setOnClickListener( this );
-        Log.v("hhhhhhhhh","sdasdasd");
-
-
+        mapService=findViewById(R.id.stepsService);
+        mapService.setOnClickListener( this );
     }
 
     class SensorsDataReciever extends BroadcastReceiver {
@@ -43,8 +36,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             if (intent.getAction().equals("GET_SIGNAL_STRENGTH")) {
                 String level = intent.getStringExtra("LEVEL_DATA");
-                Log.v("hello sensorreciver","");
-                // Show it in GraphView
             }
         }
     }
@@ -57,36 +48,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void onClick(View view) {
-
-        // process to be performed
-        // if start button is clicked
-        if(view == startServices){
-            Log.v("Start Services","Start");
-           // getDataFromService(true);
-
-            // starting the service
-           startService(new Intent( this, TempService.class ) );
-            Intent i = new Intent(this, ShowDataSensors.class);
+            Log.v("StepCounter Services","Steps");
+            Intent i = new Intent(this, StepsCounter.class);
             startActivity(i);
 
-
-        }
-
-        // process to be performed
-        // if stop button is clicked
-        else if (view == stopServices){
-            Log.v("Stop Services","Stop");
-            //getDataFromService(false);
-
-            // stopping the service
-            stopService(new Intent( this, TempService.class ) );
-
-
-        }
     }
-
-
-
-
-
 }

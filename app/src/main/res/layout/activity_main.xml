@@ -18,25 +18,16 @@
          android:id="@+id/imageViewCar"
          android:layout_width="150dp"
          android:layout_height="150dp"
-         app:srcCompat="@drawable/sensor" />
+         app:srcCompat="@drawable/steps" />
 
      <Button
          android:textColor="@color/black"
 
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
-         android:text="Start Services"
-         android:id="@+id/startServices"
-         android:textAllCaps="false"></Button>
-     <Button
-         android:textColor="@color/black"
-
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:text="Stop Services"
+         android:text="Count My Steps!"
          android:textAllCaps="false"
-         android:id="@+id/stopServices">
-
+         android:id="@+id/stepsService">
      </Button>
 
  </LinearLayout>
