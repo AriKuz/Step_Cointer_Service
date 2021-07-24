@@ -11,7 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.temp_sensor_service.R;
+import com.example.steps_counter_service.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
