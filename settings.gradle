@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "Temp_Sensor_Service"
+rootProject.name = "steps_counter_srevice"
